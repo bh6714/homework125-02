@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task</title>
+</head>
+<body>
+    <p id="demo"></p>
+<script>
+    var time = prompt ("please enter your time...");
+    var task;
+    if (8<=time && time<10){
+    task = "wake up";
+    } else if (10<=time && time<12){
+     task = "Go to work";   
+    } else if (12<=time && time<13){
+        task = "Lunch";
+    } else if (13<=time && time<17){
+        task = "Go to work";
+    } else if (17<=time && time<19){
+        task = "Gym";
+    } else if (19<=time && time<20){
+        task = "Dinner time";
+    } else if (20>=time && time<22){
+        task = "Watch Tv";
+    } else if (22<=time && time<=24){
+         task = "Time to go to sleep";
+    } else {
+        task ="You should be sleeping";
+    }
+    document.getElementById('demo').innerHTML = task
+
+</script>
+    <script src="./app.js"></script>
+</body>
+</html>
